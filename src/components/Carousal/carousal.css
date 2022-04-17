@@ -1,0 +1,18 @@
+.carousal-wrapper {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  padding: 1em;
+  cursor: grab;
+}
+
+.carousel .control-dots .dot.selected,
+.carousel .control-dots .dot:hover {
+  background-color: dodgerblue;
+}
+
+@media screen and (min-width: 640px) {
+  .carousal-wrapper {
+    width: 40%;
+  }
+}
