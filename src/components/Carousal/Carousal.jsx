@@ -5,11 +5,12 @@ import Img1 from "../../assets/carousal/img1.png";
 import Img2 from "../../assets/carousal/img2.png";
 import Img3 from "../../assets/carousal/img3.png";
 import Img4 from "../../assets/carousal/img4.png";
-import Img5 from "../../assets/carousal/img5.png";
+import Img5 from "../../assets/carousal/img5.jpg";
+import Img6 from "../../assets/carousal/img6.png";
 import "./carousal.css";
 
 function ImgCarousel() {
-  const imgs = [Img1, Img2, Img3, Img4, Img5];
+  const imgs = [Img1, Img2, Img3, Img4, Img5, Img6];
   return (
     <div className="carousal-wrapper">
       <Carousel

@@ -5,24 +5,42 @@
   justify-content: center;
   align-items: center;
   font-size: 16px;
+  background-image: url("./assets/order.gif");
+}
+
+.roadmapImg1 {
+  display: block;
+  width: 100%;
+}
+.roadmapImg2 {
+  display: none;
+  width: 100%;
 }
 
 .des-container {
   background-color: black;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   font-size: 16px;
   padding: 40px;
   min-width: 1140px;
   min-height: 100vh;
+  background-image: url("./assets/order.gif");
+}
+
+.jumbo-text {
+  font-size: 4rem;
+  color: white;
+  margin: 0;
 }
 
 .entry,
 .intro {
   max-width: 1140px;
-  /* background-image: url("./assets/bg1.gif"); */
+  align-items: center;
+  flex: 1;
+  display: flex;
 }
 
 .navwrapper {
@@ -91,10 +109,14 @@
   width: 1140px;
   display: flex;
   justify-content: center;
-  align-items: center;
   overflow: hidden;
 }
 
+.ant-menu-light {
+  color: white;
+  border: none;
+  height: 650px;
+}
 .ant-menu-light .ant-menu-item:hover,
 .ant-menu-light .ant-menu-item-active,
 .ant-menu-light .ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open,
@@ -105,7 +127,8 @@
 }
 
 .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
-  background-color: #556b2f;
+  background-color: white;
+  color: black;
 }
 
 .ant-menu-vertical .ant-menu-item::after,
@@ -116,7 +139,7 @@
 }
 
 .ant-menu-item-selected {
-  color: white;
+  color: black;
 }
 
 .introwrapper {
@@ -128,9 +151,8 @@
 }
 
 .des-introwrapper {
-  margin: auto;
-  padding: 1em;
-  max-height: 580px;
+  padding-left: 40px;
+  max-height: 650px;
   overflow: auto;
 }
 
@@ -147,10 +169,16 @@
 .des-introcontent {
   color: white;
   display: flex;
+  font-size: 1.5rem;
   flex-direction: column;
   justify-content: center;
   align-self: flex-start;
-  padding: 1em;
+}
+
+.des-logo{
+  position: absolute;
+  left: 20px;
+  top: 0
 }
 
 .introcontent h2 {
@@ -288,6 +316,7 @@
   border: none;
   margin: 20px 0px;
   cursor: pointer;
+  width: 100%;
 }
 
 @media screen and (max-width: 700px) {
@@ -444,6 +473,15 @@
     width: 100%;
     height: auto;
     padding: 1em;
+  }
+
+  .roadmapImg1 {
+    display: none;
+    width: 100%;
+  }
+  .roadmapImg2 {
+    display: block;
+    width: 100%;
   }
 
   .image-wrapper {

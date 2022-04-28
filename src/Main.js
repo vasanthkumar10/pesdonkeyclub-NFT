@@ -15,8 +15,14 @@ import entry from "./assets/entry.jpg";
 import collection from "./assets/collection.jpg";
 import world from "./assets/world.png";
 import utilities from "./assets/utilities.png";
-import roadmap from "./assets/roadmap.png";
+import roadMap from "./assets/roadMap.jpeg";
+import roadMapMobile from "./assets/roadMapMobile.jpeg";
 import placeholder from "./assets/placeholder.png";
+import elite from "./assets/nft/elite.png";
+import joe from "./assets/nft/joe.png";
+import yash from "./assets/nft/yash.png";
+import shawn from "./assets/nft/shawn.jpg";
+import david from "./assets/nft/david.jpg";
 import { DiscordIcon } from "./components/Icon/DiscordIcon";
 import ImgCarousel from "./components/Carousal/Carousal";
 import { Link } from "react-router-dom";
@@ -174,11 +180,9 @@ function App() {
                   donkeys play sports, design clothing, practice magic, and make
                   porcelain. There are schools, playgrounds, and stadiums.
                 </p>
-                <button className="mint-btn">
-                  <Link to="/des" style={{ color: "white" }}>
-                    Read a Lore
-                  </Link>
-                </button>
+                <Link to="/des">
+                  <button className="mint-btn">Read a Lore</button>
+                </Link>
               </div>
               <img
                 className="introImg"
@@ -226,13 +230,8 @@ function App() {
         <section id="roadmap" className="intro">
           <div className="introcontainer">
             <div className="introwrapper">
-              <img
-                className="roadmapImg"
-                width={1140}
-                height={683}
-                src={roadmap}
-                alt="roadmap"
-              ></img>
+            <img src={roadMap} className="roadmapImg1" alt="road map" />
+            <img src={roadMapMobile} className="roadmapImg2" alt="road map" />
             </div>
             <hr className="divider"></hr>
           </div>
@@ -244,8 +243,8 @@ function App() {
                 <h2>MEET OUR FANTASTIC TEAM</h2>
                 <div className="image-wrapper">
                   <div className="image-container">
-                    <img src={placeholder}></img>
-                    <h2>Shawn Wu</h2>
+                    <img src={elite} alt="Elite NFT Studio"></img>
+                    <h2>Elite NFT Studio</h2>
                     <p>Founder</p>
                     <span className="icons">
                       <span className="icon-filled">
@@ -263,8 +262,8 @@ function App() {
                     </span>
                   </div>
                   <div className="image-container">
-                    <img src={placeholder}></img>
-                    <h2>Shawn Wu</h2>
+                    <img src={joe} alt="Joe"></img>
+                    <h2>Joe</h2>
                     <p>Founder</p>
                     <span className="icons">
                       <span className="icon-filled">
@@ -282,8 +281,8 @@ function App() {
                     </span>
                   </div>
                   <div className="image-container">
-                    <img src={placeholder}></img>
-                    <h2>Shawn Wu</h2>
+                    <img src={yash} alt="Yash"></img>
+                    <h2>Yash</h2>
                     <p>Founder</p>
                     <span className="icons">
                       <span className="icon-filled">
@@ -301,8 +300,8 @@ function App() {
                     </span>
                   </div>
                   <div className="image-container">
-                    <img src={placeholder}></img>
-                    <h2>Shawn Wu</h2>
+                    <img src={shawn} alt="Shawn"></img>
+                    <h2>Shawn</h2>
                     <p>Founder</p>
                     <span className="icons">
                       <span className="icon-filled">
@@ -320,6 +319,25 @@ function App() {
                     </span>
                   </div>
                   <div className="image-container">
+                    <img src={david} alt="David"></img>
+                    <h2>David</h2>
+                    <p>Founder</p>
+                    <span className="icons">
+                      <span className="icon-filled">
+                        <InstagramOutlined />
+                      </span>
+                      <span className="icon-filled">
+                        <TwitterOutlined />
+                      </span>
+                      <span className="icon-filled">
+                        <LinkedinFilled />
+                      </span>
+                      <span className="icon-filled">
+                        <DiscordIcon />
+                      </span>
+                    </span>
+                  </div>
+                  {/* <div className="image-container">
                     <img src={placeholder}></img>
                     <h2>Shawn Wu</h2>
                     <p>Founder</p>
@@ -337,26 +355,7 @@ function App() {
                         <DiscordIcon />
                       </span>
                     </span>
-                  </div>
-                  <div className="image-container">
-                    <img src={placeholder}></img>
-                    <h2>Shawn Wu</h2>
-                    <p>Founder</p>
-                    <span className="icons">
-                      <span className="icon-filled">
-                        <InstagramOutlined />
-                      </span>
-                      <span className="icon-filled">
-                        <TwitterOutlined />
-                      </span>
-                      <span className="icon-filled">
-                        <LinkedinFilled />
-                      </span>
-                      <span className="icon-filled">
-                        <DiscordIcon />
-                      </span>
-                    </span>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
