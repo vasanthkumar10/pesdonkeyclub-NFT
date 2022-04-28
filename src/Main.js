@@ -10,10 +10,10 @@ import {
   MenuOutlined,
 } from "@ant-design/icons";
 
-import logo from "./assets/logo.png";
+import logo from "./assets/logo1.png";
 import entry from "./assets/entry.jpg";
-import collection from "./assets/collection.jpg";
-import world from "./assets/world.png";
+import collection from "./assets/collection.gif";
+import world from "./assets/world1.png";
 import utilities from "./assets/utilities.png";
 import roadMap from "./assets/roadMap.jpeg";
 import roadMapMobile from "./assets/roadMapMobile.jpeg";
@@ -175,12 +175,12 @@ function App() {
               <div className="introcontent">
                 <h2>WORLDVIEW</h2>
                 <p>
-                  Welcome to the Pessimistic Donkey Club. This is a group of
-                  7777 donkeys who live on Happy Farm. This is a farm where
-                  donkeys play sports, design clothing, practice magic, and make
-                  porcelain. There are schools, playgrounds, and stadiums.
+                  Our Donkeys live in the Happy Farm. All of them have their own
+                  stories about their lives. Danny, Porcelain Master, Bat
+                  Donkey, Joker, Wizard, Ninja, Pepe Donkey, etc. Our stories
+                  surround Danny’s life and his adventures…
                 </p>
-                <Link to="/des">
+                <Link to="/worldview">
                   <button className="mint-btn">Read a Lore</button>
                 </Link>
               </div>
@@ -230,8 +230,8 @@ function App() {
         <section id="roadmap" className="intro">
           <div className="introcontainer">
             <div className="introwrapper">
-            <img src={roadMap} className="roadmapImg1" alt="road map" />
-            <img src={roadMapMobile} className="roadmapImg2" alt="road map" />
+              <img src={roadMap} className="roadmapImg1" alt="road map" />
+              <img src={roadMapMobile} className="roadmapImg2" alt="road map" />
             </div>
             <hr className="divider"></hr>
           </div>
@@ -243,28 +243,9 @@ function App() {
                 <h2>MEET OUR FANTASTIC TEAM</h2>
                 <div className="image-wrapper">
                   <div className="image-container">
-                    <img src={elite} alt="Elite NFT Studio"></img>
-                    <h2>Elite NFT Studio</h2>
-                    <p>Founder</p>
-                    <span className="icons">
-                      <span className="icon-filled">
-                        <InstagramOutlined />
-                      </span>
-                      <span className="icon-filled">
-                        <TwitterOutlined />
-                      </span>
-                      <span className="icon-filled">
-                        <LinkedinFilled />
-                      </span>
-                      <span className="icon-filled">
-                        <DiscordIcon />
-                      </span>
-                    </span>
-                  </div>
-                  <div className="image-container">
-                    <img src={joe} alt="Joe"></img>
+                    <img src={joe} alt="Elite NFT Studio"></img>
                     <h2>Joe</h2>
-                    <p>Founder</p>
+                    <p>Co-Founder</p>
                     <span className="icons">
                       <span className="icon-filled">
                         <InstagramOutlined />
@@ -281,28 +262,47 @@ function App() {
                     </span>
                   </div>
                   <div className="image-container">
-                    <img src={yash} alt="Yash"></img>
-                    <h2>Yash</h2>
-                    <p>Founder</p>
-                    <span className="icons">
-                      <span className="icon-filled">
-                        <InstagramOutlined />
-                      </span>
-                      <span className="icon-filled">
-                        <TwitterOutlined />
-                      </span>
-                      <span className="icon-filled">
-                        <LinkedinFilled />
-                      </span>
-                      <span className="icon-filled">
-                        <DiscordIcon />
-                      </span>
-                    </span>
-                  </div>
-                  <div className="image-container">
-                    <img src={shawn} alt="Shawn"></img>
+                    <img src={shawn} alt="Joe"></img>
                     <h2>Shawn</h2>
-                    <p>Founder</p>
+                    <p>Co-Founder</p>
+                    <span className="icons">
+                      <span className="icon-filled">
+                        <InstagramOutlined />
+                      </span>
+                      <span className="icon-filled">
+                        <TwitterOutlined />
+                      </span>
+                      <span className="icon-filled">
+                        <LinkedinFilled />
+                      </span>
+                      <span className="icon-filled">
+                        <DiscordIcon />
+                      </span>
+                    </span>
+                  </div>
+                  <div className="image-container">
+                    <img src={david} alt="Yash"></img>
+                    <h2>David</h2>
+                    <p>Co-Founder</p>
+                    <span className="icons">
+                      <span className="icon-filled">
+                        <InstagramOutlined />
+                      </span>
+                      <span className="icon-filled">
+                        <TwitterOutlined />
+                      </span>
+                      <span className="icon-filled">
+                        <LinkedinFilled />
+                      </span>
+                      <span className="icon-filled">
+                        <DiscordIcon />
+                      </span>
+                    </span>
+                  </div>
+                  <div className="image-container">
+                    <img src={yash} alt="Shawn"></img>
+                    <h2>Yash Gawde</h2>
+                    <p>Artist</p>
                     <span className="icons">
                       <span className="icon-filled">
                         <InstagramOutlined />
@@ -320,8 +320,8 @@ function App() {
                   </div>
                   <div className="image-container">
                     <img src={david} alt="David"></img>
-                    <h2>David</h2>
-                    <p>Founder</p>
+                    <h2>Rupesh Dudhmal</h2>
+                    <p>Artist</p>
                     <span className="icons">
                       <span className="icon-filled">
                         <InstagramOutlined />

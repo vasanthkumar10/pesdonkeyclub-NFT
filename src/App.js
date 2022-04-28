@@ -7,7 +7,7 @@ function App() {
   return (
     <HashRouter>
       <Routes>
-        <Route path="/des" element={<Description />} />
+        <Route path="/worldview" element={<Description />} />
         <Route path="/*" element={<Main />} />
       </Routes>
     </HashRouter>

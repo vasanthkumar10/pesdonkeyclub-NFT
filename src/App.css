@@ -75,7 +75,8 @@
   margin: auto;
   padding: 1em;
   cursor: pointer;
-  font-family: "Playfair Display";
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
 }
 
 .menulink a {
@@ -175,15 +176,18 @@
   align-self: flex-start;
 }
 
-.des-logo{
+.des-logo {
   position: absolute;
   left: 20px;
-  top: 0
+  top: 0;
+  width: 264px;
 }
 
 .introcontent h2 {
   font-size: 34px;
   color: white;
+  font-weight: 600;
+  font-style: italic;
 }
 
 .introcontent li {
@@ -217,6 +221,8 @@
   font-size: 34px;
   color: white;
   text-align: center;
+  font-weight: 600;
+  font-style: italic;
 }
 
 .ant-collapse {
@@ -279,6 +285,8 @@
   font-size: 18px;
   text-align: center;
   margin: 10px auto;
+  font-weight: 600;
+  font-style: italic;
 }
 
 .image-wrapper p {
@@ -378,7 +386,7 @@
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
-    font-family: "Playfair Display";
+    font-family: "Montserrat", sans-serif;
   }
 
   .menulink-mob a {
@@ -416,7 +424,7 @@
     margin: auto;
     padding: 1em;
     cursor: pointer;
-    font-family: "Playfair Display";
+    font-family: "Montserrat", sans-serif;
   }
 
   .menulink a:hover {

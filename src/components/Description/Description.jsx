@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Menu } from "antd";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo1.png";
 import { Link } from "react-router-dom";
 
 const menu = [
@@ -81,17 +81,17 @@ Gradually, the stars began to shine outside the window. Danny first saw the moon
 
 function Description() {
   const [value, setValue] = useState(0);
-  
+
   const handleClick = (e) => {
     setValue(e.key - 1);
   };
 
   return (
     <div className="des-container">
-      <Link to='/'>
-        <img className="des-logo" src={logo} alt="logo" />
+      <Link to="/">
+        <img className="des-logo" src={logo} alt="logo" width={264} />
       </Link>
-      
+
       <section id="collection" className="intro">
         <div className="des-introcontainer">
           <Menu
@@ -102,9 +102,7 @@ function Description() {
             mode="inline"
           >
             {menu.map((val, index) => {
-              return (
-                <Menu.Item key={index + 1}>{val}</Menu.Item>
-              )
+              return <Menu.Item key={index + 1}>{val}</Menu.Item>;
             })}
           </Menu>
           <div className="des-introwrapper">
