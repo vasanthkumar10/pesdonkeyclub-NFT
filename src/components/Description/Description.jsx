@@ -93,50 +93,52 @@ function Description() {
         <img className="des-logo" src={logo} alt="logo" width={264} />
       </Link>
 
-      <section id="collection" className="intro">
-        <div className="des-introcontainer">
-          <Menu
-            onClick={handleClick}
-            style={{ width: "25%", margin: "0", backgroundColor: "#546B31" }}
-            defaultSelectedKeys={[`${value + 1}`]}
-            defaultOpenKeys={[`${value + 1}`]}
-            selectedKeys={[`${value + 1}`]}
-            mode="inline"
-          >
-            {menu.map((val, index) => {
-              return <Menu.Item key={index + 1}>{val}</Menu.Item>;
-            })}
-          </Menu>
-          <div className="des-introwrapper">
-            <h1 className="jumbo-text">{menu[value]}</h1>
-            <div className="des-introcontent">
-              <p>{data[value]}</p>
+      <section id="collection">
+        <div className="intro">
+          <div className="des-introcontainer">
+            <Menu
+              onClick={handleClick}
+              style={{ width: "25%", margin: "0", backgroundColor: "#546B31" }}
+              defaultSelectedKeys={[`${value + 1}`]}
+              defaultOpenKeys={[`${value + 1}`]}
+              selectedKeys={[`${value + 1}`]}
+              mode="inline"
+            >
+              {menu.map((val, index) => {
+                return <Menu.Item key={index + 1}>{val}</Menu.Item>;
+              })}
+            </Menu>
+            <div className="des-introwrapper">
+              <h1 className="jumbo-text">{menu[value]}</h1>
+              <div className="des-introcontent">
+                <p>{data[value]}</p>
+              </div>
             </div>
           </div>
         </div>
-      </section>
-      <div className="des-btn">
-        <div style={{ display: "flex", justifyContent: "center" }}>
-          <button
-            onClick={() => {
-              if (value !== 0) {
-                setValue((value) => value - 1);
-              }
-            }}
-          >
-            <ArrowLeftOutlined />
-          </button>
-          <button
-            onClick={() => {
-              if (value !== 11) {
-                setValue((value) => value + 1);
-              }
-            }}
-          >
-            <ArrowRightOutlined />
-          </button>
+        <div className="des-btn">
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <button
+              onClick={() => {
+                if (value !== 0) {
+                  setValue((value) => value - 1);
+                }
+              }}
+            >
+              <ArrowLeftOutlined />
+            </button>
+            <button
+              onClick={() => {
+                if (value !== 11) {
+                  setValue((value) => value + 1);
+                }
+              }}
+            >
+              <ArrowRightOutlined />
+            </button>
+          </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 }
