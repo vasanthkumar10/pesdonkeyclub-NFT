@@ -30,9 +30,12 @@
 }
 
 .jumbo-text {
-  font-size: 4rem;
+  font-size: 3rem;
   color: white;
   margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-weight: 600;
 }
 
 .entry,
@@ -170,7 +173,7 @@
 .des-introcontent {
   color: white;
   display: flex;
-  font-size: 1.5rem;
+  font-size: 18px;
   flex-direction: column;
   justify-content: center;
   align-self: flex-start;
@@ -323,6 +326,24 @@
   padding: 10px;
   border: none;
   margin: 20px 0px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.des-btn {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+}
+
+.des-btn button {
+  background-color: #556b2f;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  margin: 25px;
   cursor: pointer;
   width: 100%;
 }

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Menu } from "antd";
 import logo from "../../assets/logo1.png";
 import { Link } from "react-router-dom";
+import { ArrowLeftOutlined, ArrowRightOutlined } from "@ant-design/icons";
 
 const menu = [
   "Opening",
@@ -97,8 +98,9 @@ function Description() {
           <Menu
             onClick={handleClick}
             style={{ width: "25%", margin: "0", backgroundColor: "#546B31" }}
-            defaultSelectedKeys={["1"]}
-            defaultOpenKeys={["1"]}
+            defaultSelectedKeys={[`${value + 1}`]}
+            defaultOpenKeys={[`${value + 1}`]}
+            selectedKeys={[`${value + 1}`]}
             mode="inline"
           >
             {menu.map((val, index) => {
@@ -113,6 +115,28 @@ function Description() {
           </div>
         </div>
       </section>
+      <div className="des-btn">
+        <div style={{ display: "flex", justifyContent: "center" }}>
+          <button
+            onClick={() => {
+              if (value !== 0) {
+                setValue((value) => value - 1);
+              }
+            }}
+          >
+            <ArrowLeftOutlined />
+          </button>
+          <button
+            onClick={() => {
+              if (value !== 11) {
+                setValue((value) => value + 1);
+              }
+            }}
+          >
+            <ArrowRightOutlined />
+          </button>
+        </div>
+      </div>
     </div>
   );
 }
