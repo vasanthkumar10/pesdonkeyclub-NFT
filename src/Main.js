@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "./App.css";
 import { Collapse, Drawer } from "antd";
 import {
@@ -13,7 +13,7 @@ import {
 import logo from "./assets/logo1.png";
 import entry from "./assets/entry.jpg";
 import collection from "./assets/collection.gif";
-import world from "./assets/world1.png";
+import world from "./assets/world2.png";
 import utilities from "./assets/utilities.png";
 import roadMap from "./assets/roadMap.jpeg";
 import roadMapMobile from "./assets/roadMapMobile.jpeg";
@@ -31,6 +31,49 @@ const { Panel } = Collapse;
 
 function App() {
   const [visible, setVisible] = useState(false);
+  const introductionRef = useRef(null);
+  const collectionRef = useRef(null);
+  const worldwideviewRef = useRef(null);
+  const utilitiesRef = useRef(null);
+  const roadmapRef = useRef(null);
+  const teamRef = useRef(null);
+  const faqRef = useRef(null);
+
+  const introductionScroll = () =>
+    introductionRef.current.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  const collectionScroll = () =>
+    collectionRef.current.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  const worldwideviewRefScroll = () =>
+    worldwideviewRef.current.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  const utilitiesScroll = () =>
+    utilitiesRef.current.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  const roadmapScroll = () =>
+    roadmapRef.current.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  const teamScroll = () =>
+    teamRef.current.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  const faqScroll = () =>
+    faqRef.current.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
 
   const showDrawer = () => {
     setVisible(true);
@@ -53,25 +96,25 @@ function App() {
                 height="auto"
               ></img>
               <li className="menulink">
-                <a href="#introduction">INTRODUCTION</a>
+                <a onClick={introductionScroll}>INTRODUCTION</a>
               </li>
               <li className="menulink">
-                <a href="#collection">COLLECTION</a>
+                <a onClick={collectionScroll}>COLLECTION</a>
               </li>
               <li className="menulink">
-                <a href="#worldwideview">WORLDVIEW</a>
+                <a onClick={worldwideviewRefScroll}>WORLDVIEW</a>
               </li>
               <li className="menulink">
-                <a href="#utilities">UTILITIES</a>
+                <a onClick={utilitiesScroll}>UTILITIES</a>
               </li>
               <li className="menulink">
-                <a href="#roadmap">ROADMAP</a>
+                <a onClick={roadmapScroll}>ROADMAP</a>
               </li>
               <li className="menulink">
-                <a href="#team">TEAM</a>
+                <a onClick={teamScroll}>TEAM</a>
               </li>
               <li className="menulink">
-                <a href="#faqs">FAQ</a>
+                <a onClick={faqScroll}>FAQ</a>
               </li>
             </div>
             <div className="mobileNav">
@@ -126,7 +169,7 @@ function App() {
             <hr className="divider"></hr>
           </div>
         </section>
-        <section id="introduction" className="intro">
+        <section ref={introductionRef} id="introduction" className="intro">
           <div className="introcontainer">
             <div className="introwrapper">
               <div className="introcontent">
@@ -143,7 +186,7 @@ function App() {
             <hr className="divider"></hr>
           </div>
         </section>
-        <section id="collection" className="intro">
+        <section ref={collectionRef} id="collection" className="intro">
           <div className="introcontainer">
             <div className="introwrapper">
               <img
@@ -169,7 +212,7 @@ function App() {
             <hr className="divider"></hr>
           </div>
         </section>
-        <section id="worldwideview" className="intro">
+        <section ref={worldwideviewRef} id="worldwideview" className="intro">
           <div className="introcontainer">
             <div className="introwrapper">
               <div className="introcontent">
@@ -195,7 +238,7 @@ function App() {
             <hr className="divider"></hr>
           </div>
         </section>
-        <section id="utilities" className="intro">
+        <section ref={utilitiesRef} id="utilities" className="intro">
           <div className="introcontainer">
             <div className="introwrapper">
               <img
@@ -227,7 +270,7 @@ function App() {
             <hr className="divider"></hr>
           </div>
         </section>
-        <section id="roadmap" className="intro">
+        <section ref={roadmapRef} id="roadmap" className="intro">
           <div className="introcontainer">
             <div className="introwrapper">
               <img src={roadMap} className="roadmapImg1" alt="road map" />
@@ -236,7 +279,7 @@ function App() {
             <hr className="divider"></hr>
           </div>
         </section>
-        <section id="team" className="intro">
+        <section ref={teamRef} id="team" className="intro">
           <div className="introcontainer">
             <div className="faqwrapper">
               <div className="faqcontent">
@@ -244,7 +287,7 @@ function App() {
                 <div className="image-wrapper">
                   <div className="image-container">
                     <img src={joe} alt="Elite NFT Studio"></img>
-                    <h2>Joe</h2>
+                    <h2>Joe Zhao</h2>
                     <p>Co-Founder</p>
                     <span className="icons">
                       <span className="icon-filled">
@@ -263,7 +306,7 @@ function App() {
                   </div>
                   <div className="image-container">
                     <img src={shawn} alt="Joe"></img>
-                    <h2>Shawn</h2>
+                    <h2>Shawn Wu</h2>
                     <p>Co-Founder</p>
                     <span className="icons">
                       <span className="icon-filled">
@@ -282,7 +325,7 @@ function App() {
                   </div>
                   <div className="image-container">
                     <img src={david} alt="Yash"></img>
-                    <h2>David</h2>
+                    <h2>David Huang</h2>
                     <p>Co-Founder</p>
                     <span className="icons">
                       <span className="icon-filled">
@@ -319,7 +362,7 @@ function App() {
                     </span>
                   </div>
                   <div className="image-container">
-                    <img src={david} alt="David"></img>
+                    <img src={elite} alt="David"></img>
                     <h2>Rupesh Dudhmal</h2>
                     <p>Artist</p>
                     <span className="icons">
@@ -362,7 +405,7 @@ function App() {
             <hr className="divider"></hr>
           </div>
         </section>
-        <section id="faqs" className="intro">
+        <section ref={faqRef} id="faqs" className="intro">
           <div className="introcontainer">
             <div className="faqwrapper">
               <div className="faqcontent">
@@ -390,7 +433,7 @@ function App() {
                         We are preselling 200 Donkeys, afterwards, the rest of
                         9398 Donkeys includes 3999 whitelist and 5399 public
                         sales. There will be 502 Donkeys being set aside, so
-                        there are a total of 10100 Donkeys.
+                        there are a total of 8088 Donkeys.
                       </p>
                     </Panel>
                     <Panel header="How to mint a Donkey?" key="3">
